@@ -1,0 +1,328 @@
+/* font-family: "Cairo", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap');
+/* font-family: "Reem Kufi", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
+/* font-family: "Harmattan", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/IMG/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: "Cairo", sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    /* header-logo */
+header .header-logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 3.5em;
+    font-family: "Reem Kufi", sans-serif;
+}
+    /* header-logo */
+header .header-links ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+header .header-links li{
+    padding: 0px 20px ;
+    font-size: 1.5em;
+}
+
+header .header-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    color: #AB6422;
+}
+    /* Hamburger and close style */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+}
+
+header .header-links .title-span a{
+    display: none;
+    
+}
+
+/* Top-button */
+/* #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #AB6422;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+#myBtn:hover {
+    background-color:#DBB296;
+    color: white;
+    transition: 1s ease;
+} */
+    /* main-content */
+
+.main-content{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-calculator{
+    height: 70%;
+    border: 2px solid black;
+    background-color: rgb(rgb(0, 0, 0));
+    backdrop-filter: blur(5px);    
+    border-radius: 0px 75px;
+    padding: 25px 50px;
+}
+
+.main-content-calculator h1{
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+}
+button {
+    background-color: #AB6422;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+button:hover {
+    background-color: #DBB296;
+}
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7ef;
+    border-radius: 4px;
+}
+.result-item {
+    margin-bottom: 10px;
+}
+.result-label {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    height: 64vh;
+}
+footer .footer-content {
+    background-color: #111111;
+    text-align: center;
+    padding: 35px 0px;
+}
+
+footer .footer-content span{
+    color: white;
+    font-size:9em;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+footer .footer-content p{
+    color: white;
+    font-size: 1.5em;
+    font-family: "Dancing Script", sans-serif ;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.contact-icons a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding: 35px 10px;
+}
+
+.contact-icons a:hover{
+    color: #AB6422;
+    transition: 0.8s ease;
+}
+
+.footer-copyright{
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-copyright p{
+    color: white;
+}
+.footer-copyright span {
+    color: #AB6422;
+    font-weight: bold;
+}
+
+    /* Media Screens */
+
+@media screen and (max-width: 1000px) {
+header {
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
+.hamburger-menu{
+    font-size: 3em;
+}
+
+.header-links ul {
+    position: fixed;
+    top: 60px;
+    left: -100%; /* Changed from right to left */
+    width: 60%;
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    transition: left 0.5s ease; /* Changed from right to left */
+    font-family: "Harmattan", sans-serif;
+}
+    
+.header-links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.header-links ul.active {
+    left: 0; /* Changed from right to left */
+}
+    
+.header-links li {
+    padding: 20px 0;
+    
+}
+    
+.hamburger-menu {
+    display: block;
+    margin-right: auto;
+}
+
+header .header-links .title-span{
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0px 5px;
+    color: #AB6422;
+}
+
+footer{
+    height: 82vh;
+}
+
+footer .footer-content p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Harmattan", sans-serif;
+}
+}
+
+
+
+@media screen and (max-width: 710px) {
+footer{
+height: 72vh;
+}
+
+footer .footer-content p{
+    padding: 0px 40px;
+    font-size: 1.1rem;
+}
+}
+
+
+
+@media screen and (max-width: 420px) {
+header .header-links .title-span{
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    padding: 0px 5px;
+    color: #AB6422;
+}
+
+.hamburger-menu {
+    font-size: 2.2rem;
+}
+
+footer{
+    height: 62vh;
+}
+
+footer .footer-content span{
+    color: white;
+    font-size:5em;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+footer .footer-content p{
+    padding: 0px 40px;
+    font-size: 0.9rem;
+}
+}
