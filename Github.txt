@@ -1,0 +1,7 @@
+GitHub CSS link error
+
+
+===========================================================
+same as background
+
+background-image: url(\IMG/background.jpg);
