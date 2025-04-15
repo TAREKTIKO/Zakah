@@ -530,11 +530,11 @@ header .header-links .title-span{
 
 .hamburger-menu {
     font-size: 2.2rem;
-    padding: 5px 5px;
 }
 
 .main-content-sheep {
     height: auto;
+    padding: 10px 10px;
 }
 
 .main-content-sheep .box-title{
