@@ -530,7 +530,35 @@ header .header-links .title-span{
 
 .hamburger-menu {
     font-size: 2.2rem;
+    padding: 5px 5px;
 }
+
+.main-content-sheep {
+    height: auto;
+}
+
+.main-content-sheep .box-title{
+    font-size: 1.5rem;
+}
+
+.main-content-sheep p{
+    font-size: 1.3rem;
+}
+
+.main-content-sheep .quran{
+    font-size: 0.8rem;
+}
+
+.main-content-sheep .sheep-rules{
+    font-size: 0.8rem;
+}
+
+.main-content-sheep ul{
+    font-size: 0.8rem;
+}
+/* =========================================================== */
+
+/* footer */
 
 footer{
     height: 62vh;
